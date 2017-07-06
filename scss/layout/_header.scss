@@ -1,0 +1,237 @@
+
+/*
+================================================================================
+|                                     HEADER                                   |
+================================================================================
+*/
+.main-header {
+	margin: 30px 0 15px 0;
+}
+.main-header-wrapper {
+	width: $main-header-wrapper;
+	min-width: $min-width;
+	margin: 0 auto;
+}
+.main-header_top-line {
+	position: relative;
+}
+.main-header_logo-link {
+	margin: 0 40px 0 0;
+}
+.logo-link {
+	display: block;
+	.logo-link_text {
+		color: $logo-text-color;
+		padding: 0;
+		font-size: 14px;
+	}
+}
+.main-header_search-form {
+	margin: 0 90px 0 0;
+}
+.search-form {
+	position: relative;
+}
+.search-form_input {
+	width: 490px;
+	height: 38px;
+	border: 1px solid #dddfdf;
+	border-radius: 5px;
+	padding-left: 10px;
+	color: $logo-text-color;
+	display: block;
+}
+.search-form:after {
+	content: "\f002";
+	font-family: FontAwesome;
+	color: $icon-color;
+  	position: absolute;
+	display: block;
+	font-size: 16px;
+	top: 10px;
+	right: 10px;
+}
+.main-header_phone-blk {
+	margin: 5px 20px 0 0;
+}
+.phone-blk_link {
+	color: $header-black;
+	font-size: 23px;
+}
+.main-header_work-time {
+	color: $icon-color;
+	font-size: 14px;
+	padding: 0;
+}
+.main-header_shipping-info {
+	color: $header-blue;
+	padding: 0;
+	font-size: 14px;
+}
+.main-header_bottom-line {
+	border-top: 1px solid $header-borders-color;
+	border-bottom: 1px solid $header-borders-color;
+	padding: 20px 0;
+	margin: 15px 0 0 0;
+}
+.main-nav_item {
+	display: block;
+	margin: 0 20px 0 0;
+	position: relative;
+}
+.main-nav_link {
+	font-size: 16px;
+	font-weight: bold;
+	color: $menu-color;
+	text-transform: uppercase;
+}
+.main-nav_icons {
+	color: $icon-color;
+	margin: 0 10px;
+}
+.main-nav_submenu, .main-nav_third-level-menu {
+	display: none;
+}
+.main-nav_submenu {
+	position: absolute;
+	border: 1px solid $header-borders-color;
+	box-shadow: 0 0 10px $header-borders-color;
+	border-radius: 5px;
+	z-index: 100;
+	background: #fff;
+	width: 210px;
+	top: 17px;
+}
+.main-nav_submemu-item {
+	padding: 10px 15px; 
+	position: relative;
+}
+.main-nav_submemu-item:hover {
+	background: $header-borders-color;
+}
+.main-nav_submenu-link {
+	font-size: 15px;
+	color: #666666;
+}
+.main-nav_link:hover + .main-nav_submenu {
+	display: block;
+}
+.main-nav_submenu:hover {
+	display: block;
+}
+.main-nav_submenu-link:hover ~ .main-nav_third-level-menu {
+	display: block;
+}
+.main-nav_third-level-menu {
+	position: absolute;
+	box-shadow: 0 0 10px $header-borders-color;
+	border-radius: 5px;
+	z-index: 100;
+	background: #fff;
+	top: -5px;
+	width: 220px;
+	padding: 15px;
+	right: -220px;
+	.main-nav_third-level-menu-title {
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $icon-color;
+		padding: 0 0 10px;
+	}
+	.main-nav_third-level-menu-item {
+		padding: 10px 15px; 
+	}
+	.main-nav_third-level-menu-item:hover {
+		background: $header-borders-color;
+	}
+	.main-nav_third-level-menu-link {
+		font-size: 15px;
+		color: #666666;
+	}
+}
+.main-nav_third-level-menu:hover  {
+	display: block;
+}
+.cart-blk {
+    margin-left: 85px;
+}
+.cart-blk_cart-link {
+	color: $header-blue;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.cart-blk_cart-link .fa-shopping-cart {
+	color: $icon-color;
+	font-size: 16px;
+}
+.login-blk_login-btn {
+	color: $header-blue;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.login-blk_login-btn .fa-sign-in {
+	color: $icon-color;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (min-width: 992px){
+	
+}
+
+@media screen and (max-width: 991px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.main-header-wrapper {
+	    width: 708px;
+	    padding: 0 30px;
+	}
+	.logo-link_img {
+		width: 175px;
+	}
+	.logo-link .logo-link_text {
+		font-size: 12px;
+	}
+	.search-form_input {
+    	width: 205px;
+		font-size: 11px;
+   	}
+   	.phone-blk_link {
+	    font-size: 16px;
+	}
+	.main-header_work-time, .main-header_shipping-info {
+		font-size: 10px;
+	}
+	.main-header_top-line {
+		height: 50px;
+	}
+	.cart-blk {
+	    margin: 0;
+	    position: absolute;
+	    top: 74px;
+	    right: 140px;
+	}
+	.login-blk {
+	    position: absolute;
+    	top: 75px;
+    	right: 65px;
+	}
+	.main-nav_item {
+		margin: 0 15px 0 0;
+	}
+	.main-nav_link {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+}
