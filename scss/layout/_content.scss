@@ -166,11 +166,42 @@ h3{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.slick-dots {
+        display: none!important;
+    }
+    .slick-arrow {
+        height:65px;
+        width: 20px;
+        top: 60px;
+    }
+    .main-page-slider_title {
+        font-size: 22px;
+        line-height: 24px;
+        top: 60px;
+        padding: 9px;
+        width: 260px;
+    }
 }
 
 @media screen and (max-width: 767px) {
-	
+	.main-page-slider_slide {
+        height: 150px;
+    }
+    .main-page-slider_title {
+        font-size: 16px;
+        line-height: 17px;
+        padding: 8px;
+        width: 200px;
+        left: 30px;
+    }
+    .slick-arrow {
+        width: 20px;
+        height: 30px;
+        top: 25px;
+    } 
+    .slick-dots {
+        display: none;
+    }
 }
 
 

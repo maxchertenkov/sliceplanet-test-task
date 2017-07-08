@@ -12,6 +12,9 @@
 	min-width: $min-width;
 	margin: 0 auto;
 }
+.mob-menu {
+	display: none;
+}
 .main-header_top-line {
 	position: relative;
 }
@@ -230,8 +233,81 @@
 	.main-nav_link {
 		font-size: 12px;
 	}
+	.main-nav_submenu {
+		top: 13px;
+	}
 }
 
 @media screen and (max-width: 767px) {
-	
+	.mob-menu {
+		display: block;
+		position: relative;
+		.mob-menu_item {
+			width: calc(100%/6);
+			height: 40px;
+			float: left;
+			text-align: center;
+			font-size: 24px;
+			background: #f0f1f6;
+			padding: 7px 0 0 0;
+			.mob-menu_link {
+				color: #dbdbdc;
+
+			}
+		}
+		.mob-submenu_main-link {
+			background: #3eade2;
+			.mob-menu_link {
+				color: #f0f1f6;
+			}
+		}
+		.mob-submenu {
+			display: none;
+			position: absolute;
+			top: 40px;
+		    width: 100%;
+		    background: #f3f3f8;
+		    text-align: left;
+		    box-sizing: border-box;
+		    padding: 20px;
+		    z-index: 100000;
+			&.opened {
+				display: block;
+			}
+		    .mob-submenu_item {
+		    	margin: 0 0 5px 0;
+		    	.mob-submenu_link {
+		    		color: #3eade2;
+		    	}
+		    }
+		}
+		.mob-submenu-third-level {
+			display: none;
+			margin: 5px 0;
+			.mob-submenu-third-level_item {
+		    	margin: 0 0 5px 0;
+		    	.mob-submenu-third-level_link {
+		    		color: #3eade2;
+		    	}
+		    }
+		}
+	}
+	.main-header {
+		margin: 0 0 25px;
+	} 
+	.main-header-wrapper {
+		width: 320px;
+		.logo-link {
+		    margin-left: 20px;
+		}
+	}
+	.main-header_top-line {
+		margin: 15px 0 0 0;
+		.search-form, .phone-blk, .main-header_additional-info {
+			display: none;
+		}
+	}
+	.main-header_bottom-line {
+		display: none!important;
+	}
 }
